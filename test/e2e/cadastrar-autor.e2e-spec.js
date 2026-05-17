@@ -34,7 +34,6 @@ describe("Cadastrar autor", () => {
           autorData.nacionalidade,
           "A nacionalidade do autor cadastrado deve corresponder à enviada.",
         );
-
         // Remover o autor cadastrado para manter o ambiente de teste limpo
         await conexao("autores").where({ id: content.id }).delete();
       });
